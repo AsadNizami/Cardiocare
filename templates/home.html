@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Home</title>
+  </head>
+<body>
+<h1>Heart Attack Risk Calculator!!</h1><br><br>
+
+    <form action="{% url 'result' %}">
+        {% csrf_token %}
+        age: <input type="text" required name="age"><br><br>
+        sex: <input type="text" required name="sex"><br><br>
+        cp: <input type="text" required name="cp"><br><br>
+        trestbps: <input type="text" required name="trestbps"><br><br>
+        chol: <input type="text" required name="chol"><br><br>
+        restecg: <input type="text" required name="restecg"><br><br>
+        thalach: <input type="text" required name="thalach"><br><br>
+        exang: <input type="text" required name="exang"><br><br>
+        oldpeak: <input type="text" required name="oldpeak"><br><br>
+        slope: <input type="text" required name="slope"><br><br>
+        ca: <input type="text" required name="ca"><br><br>
+        thal: <input type="text" required name="thal"><br><br>
+        <input type="submit" name="" value="submit">
+    </form>
+</body>
+</html>
