@@ -4,7 +4,10 @@ import pickle as pk
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
 
-def home(request):
+def test(request):
+    return render(request, 'test.html')
+
+def landing_view(request):
     return render(request, 'home.html')
 
 def result(request):
@@ -15,13 +18,13 @@ def result(request):
     for i in column_name:
         lst.append(request.GET[i])
 
-    print(lst)
+    # print(lst)
     dic = {column_name[i]: lst[i] for i in range(len(lst))}
     df = pd.DataFrame(dic, index=[0])
     standardScalar = StandardScaler()
-    print(df)
+    # print(df)
     columns_to_scale = ['age', 'trestbps', 'chol', 'thalach', 'oldpeak']
     df[columns_to_scale] = standardScalar.fit_transform(df[columns_to_scale])
     ans = cls.predict(df)
-    print(ans)
+    # print(ans)
     return render(request, 'result.html', context={'ans': ans[0]})
