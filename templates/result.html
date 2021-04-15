@@ -1,17 +1,10 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+{% extends "base.html" %}
+{% block content %}
 
-    <title>Home</title>
-  </head>
-<body>
 This is result page.
 {% ifequal ans 1 %}
 High Risk of heart disease
 {% else %}
 Low Risk of heart disease
 {% endifequal %}
-</body>
+{% endblock content %}

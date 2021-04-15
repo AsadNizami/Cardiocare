@@ -2,8 +2,10 @@ from django.shortcuts import render
 from django.http import HttpResponse
 import pickle as pk
 import pandas as pd
+from django.contrib.auth.decorators import login_required
 from sklearn.preprocessing import StandardScaler
 
+@login_required()
 def test(request):
     return render(request, 'test.html')
 

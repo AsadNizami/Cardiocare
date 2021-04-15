@@ -1,13 +1,6 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+{% extends "base.html" %}
+{% block content %}
 
-    <title>Home</title>
-  </head>
-<body>
 <h1>Heart Attack Risk Calculator!!</h1><br><br>
 
     <form action="{% url 'result' %}">
@@ -26,5 +19,4 @@
         thal: <input type="text" required name="thal"><br><br>
         <input type="submit" name="" value="submit">
     </form>
-</body>
-</html>
+{% endblock content %}

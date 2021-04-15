@@ -1,5 +1,6 @@
 
 {% extends "base.html" %}
 {% block content %}
-    <h1>This is the home page.</h1>
+    <h1>{{ user.username }}</h1>
+    {{ user.email }}
 {% endblock content %}
