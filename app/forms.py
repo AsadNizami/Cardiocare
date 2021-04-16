@@ -12,7 +12,7 @@ class TestForm(forms.ModelForm):
             'cp': _('Chest Pain (0-3)'),
             'trestbps': _('Resting Blood Pressure in mm Hg'),
             'chol': _('Serum Cholestoral'),
-            'restecg': _('Resting Electrocardiophic Result (0-2)'),
+            'restecg': _('Resting Electrocardiographic Result (0-2)'),
             'thalach': _('Maximum Heart Rate Achieved'),
             'exang': _('Exercise Induced Angina'),
             'oldpeak': _('ST depression induced by exercise relative to rest'),

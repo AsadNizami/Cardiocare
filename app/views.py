@@ -3,6 +3,8 @@ from django.http import HttpResponse
 from django.contrib import messages
 import pickle as pk
 import pandas as pd
+from django.template.loader import get_template
+from xhtml2pdf import pisa
 from .models import Test
 from django.contrib.auth.decorators import login_required
 from sklearn.preprocessing import StandardScaler
@@ -63,3 +65,35 @@ def history(request):
     else:
         messages.warning(request, 'History is empty! Take a test now')
         return redirect('test')
+
+def render_pdf_view(request, pk):
+    # date1 = datetime.datetime(date)
+    print(pk)
+    hist = get_readable_data(Test.objects.get(pk=pk))
+    patient = request.user
+
+    template_path = 'app/user_printer.html'
+    context = {'myvar': 'this is your template context', 'hist': hist, 'patient':patient}
+    # Create a Django response object, and specify content_type as pdf
+    response = HttpResponse(content_type='application/pdf')
+    response['Content-Disposition'] = 'filename="report.pdf"'  # attachment; to download
+    # find the template and render it.
+    template = get_template(template_path)
+    html = template.render(context)
+
+    # create a pdf
+    pisa_status = pisa.CreatePDF(
+       html, dest=response)
+    # if error then show some funny view
+    if pisa_status.err:
+        return HttpResponse('We had some errors <pre>' + html + '</pre>')
+    return response
+
+def get_readable_data(obj_raw):
+    thal_dic = {0: 'Normal', 1: 'Fixed Defect', 2: 'Revesable Defect'}
+    obj_raw.sex = 'Male' if obj_raw.sex == 1 else "Female"
+    obj_raw.exang = 'Yes' if obj_raw.exang != 0 else 'No'
+    obj_raw.thal = thal_dic[obj_raw.thal]
+    obj_raw.result = 'High' if obj_raw.result == 1 else 'Low'
+
+    return obj_raw

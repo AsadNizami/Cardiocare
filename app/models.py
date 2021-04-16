@@ -4,8 +4,9 @@ from django.contrib.auth.models import User
 
 class Test(models.Model):
     CHOICES = ((1, 'Male'), (0, 'Female'))
-    THAL = ((0, 'Normal'), (1, 'Fixed Defect'), (2, 'Revesable Defect'))
+    THAL = ((0, 'Normal'), (1, 'Fixed Defect'), (2, 'Reversable Defect'))
 
+    # pk = models.AutoField(primary_key=True)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     age = models.IntegerField()
     sex = models.IntegerField(choices=CHOICES)
