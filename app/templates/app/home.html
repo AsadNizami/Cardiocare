@@ -1,5 +1,4 @@
-
-{% extends "base.html" %}
+{% extends "app/base.html" %}
 {% block content %}
     {% if user.is_authenticated %}
     <img class="rounded-circle article-img" src="{{ user.profile.image.url }}">

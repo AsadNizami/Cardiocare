@@ -1,0 +1,38 @@
+{% extends "app/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <div class="content-section">
+        <div class="media">
+            <img class="rounded-circle account-img" src="{{ user.profile.image.url }}">
+            <div class="media-body">
+                <h2 class="account-heading">{{ user.username }}</h2>
+            </div>
+        </div>
+    </div>
+    <table class="table table-dark">
+    <thead>
+      <tr>
+          <th>Age</th>
+          <th>Sex</th>
+          <th>Chest Pain</th>
+          <th>Rest Blood Pressure</th>
+          <th>Cholestoral</th>
+          <th>Maximum Heart Rate</th>
+          <th>Risk</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for hist in history %}
+      <tr>
+        <td>{{hist.age}}</td>
+        <td>{{hist.sex}}</td>
+          <td>{{hist.cp}}</td>
+        <td>{{hist.trestbps}}</td>
+        <td>{{hist.chol}}</td>
+        <td>{{hist.thalach}}</td>
+          <td>{{hist.result}}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+{% endblock content %}

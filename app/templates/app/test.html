@@ -1,9 +1,9 @@
-{% extends "base.html" %}
+{% extends "app/base.html" %}
 {% block content %}
 
 <h1>Heart Attack Risk Calculator!!</h1><br><br>
 
-    <form action="{% url 'result' %}">
+    <form action="{% url 'result' %}" method="POST">
         {% csrf_token %}
         age: <input type="text" required name="age"><br><br>
         sex: <input type="text" required name="sex"><br><br>

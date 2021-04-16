@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.contrib.auth import views as auth_views
-from app.views import test, result, landing_view
+from app.views import test, result, landing_view, history
 from users import views as user_views
 
 from django.conf import settings
@@ -26,7 +26,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', landing_view, name='landing'),
     path('test/', test, name='test'),
-    path('result/', result, name='result')
+    path('result/', result, name='result'),
+    path('history/', history, name='history')
 ]
 
 urlpatterns += [
