@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, re_path
 from django.contrib.auth import views as auth_views
-from app.views import test, result, landing_view, history, render_pdf_view
+from app import views as app_view  # test, result, landing_view, history, render_pdf_view
 from users import views as user_views
 
 from django.conf import settings
@@ -24,10 +24,11 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', landing_view, name='landing'),
-    path('test/', test, name='test'),
-    path('result/', result, name='result'),
-    path('history/', history, name='history')
+    path('', app_view.landing_view, name='landing'),
+    path('test/', app_view.test, name='test'),
+    path('result/', app_view.result, name='result'),
+    path('history/', app_view.history, name='history'),
+    re_path('pdf/(?P<pk>[^/]*)', app_view.render_pdf_view, name='pdf'),
 ]
 
 urlpatterns += [
@@ -35,8 +36,6 @@ urlpatterns += [
     path('login/', auth_views.LoginView.as_view(template_name='users/login.html'), name='login'),
     path('logout/', auth_views.LogoutView.as_view(template_name='users/logout.html'), name='logout'),
     path('profile/', user_views.profile, name='profile'),
-    re_path('pdf/(?P<pk>[^/]*)', render_pdf_view, name='pdf'),
-
 ]
 
 if settings.DEBUG:

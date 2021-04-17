@@ -9,14 +9,14 @@ class TestForm(forms.ModelForm):
         fields = ['age', 'sex', 'cp', 'trestbps', 'chol', 'restecg',
                  'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal']
         labels = {
-            'cp': _('Chest Pain (0-3)'),
-            'trestbps': _('Resting Blood Pressure in mm Hg'),
-            'chol': _('Serum Cholestoral'),
-            'restecg': _('Resting Electrocardiographic Result (0-2)'),
-            'thalach': _('Maximum Heart Rate Achieved'),
+            'cp': _('Chest Pain'),
+            'trestbps': _('Resting Blood Pressure in mm Hg (50-200)'),
+            'chol': _('Serum Cholestoral (150-400)'),
+            'restecg': _('Resting Electrocardiographic Result'),
+            'thalach': _('Maximum Heart Rate Achieved (50-200)'),
             'exang': _('Exercise Induced Angina'),
-            'oldpeak': _('ST depression induced by exercise relative to rest'),
-            'slope': _('The slope of the peak exercise ST segment'),
-            'ca': _('Number of major vessels (0-3) colored by flouroscopy'),
+            'oldpeak': _('ST depression induced by exercise relative to rest (0-10)'),
+            'slope': _('The slope of the peak exercise ST segment (0-5)'),
+            'ca': _('Number of major vessels colored by flouroscopy'),
             'thal': _('Thalassemia (Blood Disorder)')
         }

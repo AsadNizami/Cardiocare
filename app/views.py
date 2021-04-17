@@ -91,9 +91,12 @@ def render_pdf_view(request, pk):
 
 def get_readable_data(obj_raw):
     thal_dic = {0: 'Normal', 1: 'Fixed Defect', 2: 'Revesable Defect'}
+    cp_dic = {0: 'None', 1: 'Low', 2: 'Medium', 3: 'High'}
     obj_raw.sex = 'Male' if obj_raw.sex == 1 else "Female"
     obj_raw.exang = 'Yes' if obj_raw.exang != 0 else 'No'
     obj_raw.thal = thal_dic[obj_raw.thal]
     obj_raw.result = 'High' if obj_raw.result == 1 else 'Low'
+    obj_raw.cp = cp_dic[obj_raw.cp]
+    obj_raw.restecg = 'Normal' if obj_raw.restecg == 0 else 'Abnormal'
 
     return obj_raw
