@@ -27,7 +27,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -37,9 +36,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'app',
+    'app.apps.AppConfig',
     'users.apps.UsersConfig',
     'crispy_forms',
+    'info.apps.InfoConfig'
 ]
 
 MIDDLEWARE = [
@@ -131,3 +131,4 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 LOGIN_REDIRECT_URL = 'landing'
 LOGIN_URL = 'login'
+# LOGOUT_URL = 'landing'

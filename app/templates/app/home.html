@@ -1,8 +1,5 @@
 {% extends "app/base.html" %}
 {% block content %}
-    {% if user.is_authenticated %}
-    <img class="rounded-circle article-img" src="{{ user.profile.image.url }}">
-    <h1>Hello ! {{user.username}}</h1>
-    {% endif %}
     <h1>This is the home page.</h1>
+    <img class="rounded-circle account-img" src="media/info/about/apple.jpg">
 {% endblock content %}

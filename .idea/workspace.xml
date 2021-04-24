@@ -2,13 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="309c9b9f-bb9d-4f2f-a50f-f1a162a1262e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/migrations/0012_auto_20210417_1425.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/app/default.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/templates/info/about.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/apps.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/app/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/app/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/app/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/app/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/templates/app/user_printer.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/app/user_printer.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/static/main.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,10 +77,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="1028" y="212" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1618341855284" />
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1618639501872">
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1619272919687">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1618639501872" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1619272919687" />
     <state x="232" y="125" width="926" height="555" key="dock-window-1" timestamp="1618643226981">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
