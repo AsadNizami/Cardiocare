@@ -18,7 +18,7 @@ from django.urls import path, re_path
 from django.contrib.auth import views as auth_views
 from app import views as app_view  # test, result, landing_view, history, render_pdf_view
 from users import views as user_views
-
+from info import views as info_view
 from django.conf import settings
 from django.conf.urls.static import static
 
@@ -38,5 +38,8 @@ urlpatterns += [
     path('profile/', user_views.profile, name='profile'),
 ]
 
+urlpatterns += [
+    path('about/', info_view.about, name='about')
+]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
