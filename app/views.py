@@ -9,6 +9,7 @@ from .models import Test
 from django.contrib.auth.decorators import login_required
 from sklearn.preprocessing import StandardScaler
 from .forms import TestForm
+from .utility import join_mail, test_report
 import datetime
 
 @login_required()
@@ -40,6 +41,7 @@ def result(request):
         return redirect('test')
 
 def get_result(request):
+    test_report(request)
     cls = pk.load(open('app/templates/app/KNN_', 'rb'))
     Scalar = pk.load(open('app/templates/app/Scalar_', 'rb'))
     column_name = ['age', 'sex', 'cp', 'trestbps', 'chol', 'restecg',
