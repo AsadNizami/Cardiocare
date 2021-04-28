@@ -1,4 +1,5 @@
 {% extends "app/base.html" %}
+{% load static %}
 {% block info %}
 <div class="container-fluid">
     <h2>Cardiocare location</h2>
@@ -26,7 +27,7 @@
 
                 </div>
                 <img class="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb"
-                    alt="Thumbnail [200x300]" style="width: 200px; height: 350px;" src="media/info/about/cardio.jpg"
+                    alt="Thumbnail [200x300]" style="width: 200px; height: 350px;" src="{% static 'info/about/cardio.jpg' %}"
                     data-holder-rendered="true">
             </div>
         </div>
@@ -49,7 +50,7 @@
                     <a href="https://www.cdc.gov/bloodpressure/about.htm">Continue reading</a>
                 </div>
                 <img class="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb"
-                    alt="Thumbnail [200x250]" src="media/info/about/blood-pressure-calculator.jpg" data-holder-rendered="true"
+                    alt="Thumbnail [200x250]" src="{% static 'info/about/blood-pressure-calculator.jpg' %}" data-holder-rendered="true"
                     style="width: 200px; height: 350px;">
             </div>
         </div>
@@ -70,7 +71,7 @@
 
                 </div>
                 <img class="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb"
-                    alt="Thumbnail [200x300]" style="width: 200px; height: 350px;" src="media/info/about/chest pain.jpg"
+                    alt="Thumbnail [200x300]" style="width: 200px; height: 350px;" src="{% static 'info/about/chest pain.jpg' %}"
                     data-holder-rendered="true">
             </div>
         </div>
@@ -89,7 +90,7 @@
                         reading</a>
                 </div>
                 <img class="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb"
-                    alt="Thumbnail [200x250]" src="media/info/about/cholestrol.jpg" data-holder-rendered="true"
+                    alt="Thumbnail [200x250]" src="{% static 'info/about/cholestrol.jpg' %}" data-holder-rendered="true"
                     style="width: 200px; height: 350px;">
             </div>
         </div>
@@ -108,7 +109,7 @@
                         reading</a>
                 </div>
                 <img class="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb"
-                    alt="Thumbnail [200x250]" src="media/info/about/ECG.jpg" data-holder-rendered="true"
+                    alt="Thumbnail [200x250]" src="{% static 'info/about/ECG.jpg' %}" data-holder-rendered="true"
                     style="width: 200px; height: 350px;">
             </div>
         </div>
@@ -128,7 +129,7 @@
                         reading</a>
                 </div>
                 <img class="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb"
-                    alt="Thumbnail [200x250]" src="media/info/about/Angina.png" data-holder-rendered="true"
+                    alt="Thumbnail [200x250]" src="{% static 'info/about/Angina.png' %}" data-holder-rendered="true"
                     style="width: 200px; height: 350px;">
             </div>
         </div>
