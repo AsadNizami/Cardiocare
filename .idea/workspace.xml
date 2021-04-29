@@ -3,9 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="309c9b9f-bb9d-4f2f-a50f-f1a162a1262e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/utility.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/utility.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/app/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/app/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/app/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/app/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/app/join_email.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/app/join_email.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/app/result.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/app/result.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/app/test1.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/app/test1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/templates/users/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/users/templates/users/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/templates/users/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/users/templates/users/register.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,10 +65,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="424" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1619687802124" />
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1619697256811">
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1619705328373">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1619697256811" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1619705328373" />
     <state x="232" y="125" width="926" height="555" key="dock-window-1" timestamp="1618643226981">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
