@@ -15,9 +15,13 @@ def test_report(request):
     message.send()
 
 def join_mail(email):
-    send_mail(
-        subject='Thanks for joining us!',
-        message='You have successfully registered. We are happy to help!',
+    body = 'template/app/join_email.html'
+    message = EmailMultiAlternatives(
+        subject='Welcome!',
+        body=body,
         from_email=EMAIL_HOST_USER,
-        recipient_list=[email]
+        to=[email]
     )
+    html_template = render_to_string('app/join_email.html')
+    message.attach_alternative(html_template, 'text/html')
+    message.send()
