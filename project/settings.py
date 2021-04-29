@@ -141,6 +141,6 @@ LOGIN_URL = 'login'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = '587'
 EMAIL_HOST_USER = 'cardiocare2077@gmail.com'
-EMAIL_HOST_PASSWORD = 'testing@123'
+EMAIL_HOST_PASSWORD = 'buuiptoxlnmftdzu'
 EMAIL_USE_TLS = True
 # EMAIL_USE_SSL = False

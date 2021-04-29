@@ -2,10 +2,12 @@ body{
     box-sizing: border-box;
 }
 .banner{
-    background:url(../../../media/info/p1_text.jpeg) no-repeat;
+    background:url(../../../static/info/info/p1_text.jpeg) no-repeat;
     width:100%;
     min-height: 700px;
+    min-width: 540px;
     margin-bottom: 80px;
+    margin-top: -25px;
     background-size: cover;
 	-webkit-background-size: cover;
   -moz-background-size: cover;
@@ -16,14 +18,16 @@ body{
     max-width: 500px;
 }
 .msg{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif'
 }
 .hlines{
-    color: red;
+    color: red !important;
+}
+.h1{
+    color: red ! important;
 }
 @media(max-width:992px){
     .hlines{
         align-items: left !important;
     }
-    
 }
