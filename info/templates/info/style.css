@@ -1,0 +1,29 @@
+body{
+    box-sizing: border-box;
+}
+.banner{
+    background:url(../../../media/info/p1_text.jpeg) no-repeat;
+    width:100%;
+    min-height: 700px;
+    margin-bottom: 80px;
+    background-size: cover;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+.img1{
+    max-height: 500px;
+    max-width: 500px;
+}
+.msg{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.hlines{
+    color: red;
+}
+@media(max-width:992px){
+    .hlines{
+        align-items: left !important;
+    }
+    
+}
