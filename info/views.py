@@ -6,4 +6,4 @@ def about(request):
     return render(request, 'info/about.html')
 
 def info(request):
-    return render(request, 'info/info.html')
+    return render(request, 'info/Info.html')
