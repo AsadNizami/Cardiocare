@@ -4,18 +4,22 @@ body{
 .banner{
     background:url(../../../static/info/info/p1_text.jpeg) no-repeat;
     width:100%;
-    min-height: 700px;
-    min-width: 540px;
+    height: auto;
+    min-height: 540px;
+    /*min-width: 540px;*/
     margin-bottom: 80px;
-    margin-top: -25px;
+    margin-top: -2px;
     background-size: cover;
 	-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
 }
 .img1{
-    max-height: 500px;
-    max-width: 500px;
+    width:100%;
+    height: auto;
+    /*min-height: 240px;
+    max-height: 400px;
+    max-width: 400px;*/
 }
 .msg{
     font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif'
