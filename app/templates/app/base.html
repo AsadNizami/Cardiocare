@@ -79,6 +79,13 @@
     </nav>
     <!--END Navbar-->
   </header>
+      {% if messages %}
+      {% for message in messages %}
+        <div class="alert alert-{{ message.tags }}">
+          {{ message }}
+        </div>
+      {% endfor %}
+    {% endif %}
   {% block info %}{% endblock %}
   {% block content_home %}{% endblock %}
 

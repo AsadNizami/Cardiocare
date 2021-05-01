@@ -1,17 +1,35 @@
 {% extends "app/base.html" %}
 {% load crispy_forms_tags %}
 {% block content %}
+
+{% block head %}
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100;1,400&display=swap" rel="stylesheet">
+{% endblock %}
+
+<style>
+    .heading {
+	color:rgba(235.0000011920929, 55.00000052154064, 56.000000461936, 1);
+	width:613px;
+	height:98px;
+    weight: 100;
+	font-family:Montserrat;
+	text-align:justified;
+	font-size:80px;
+	letter-spacing:0;
+}
+</style>
 <div class="row" style="padding-top: 20px">
 <div class="col-lg-6 col-sm-12 col-xs-12">
     <div class="content-section">
         <form action="{% url 'result' %}" method="POST">
             {% csrf_token %}
             <fieldset class="form-group">
-                <legend class="border-bottom mb-4">Test Now</legend>
+                <legend class="border-bottom mb-4 heading" >Test Now</legend>
                 {{ form|crispy }}
             </fieldset>
             <div class="form-group" style="padding-top: 20px">
-                <button class="btn btn-outline-info" type="submit">Submit</button>
+                <button class="btn btn-outline-info" type="submit">Test</button>
             </div>
         </form>
     </div>

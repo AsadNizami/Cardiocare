@@ -84,7 +84,7 @@ def render_pdf_view(request, pk):
     patient = request.user
 
     template_path = 'app/user_printer.html'
-    context = {'myvar': 'this is your template context', 'hist': hist, 'patient':patient}
+    context = {'myvar': 'this is your template context', 'hist': hist, 'patient': patient}
     # Create a Django response object, and specify content_type as pdf
     response = HttpResponse(content_type='application/pdf')
     response['Content-Disposition'] = 'filename="report.pdf"'  # attachment; to download
@@ -106,7 +106,7 @@ def get_readable_data(obj_raw):
     obj_raw.sex = 'Male' if obj_raw.sex == 1 else "Female"
     obj_raw.exang = 'Yes' if obj_raw.exang != 0 else 'No'
     obj_raw.thal = thal_dic[obj_raw.thal]
-    obj_raw.result = 'High' if obj_raw.result == 1 else 'Low'
+    obj_raw.result = 'High' if obj_raw.result == 'High' else 'Low'
     obj_raw.cp = cp_dic[obj_raw.cp]
     obj_raw.restecg = 'Normal' if obj_raw.restecg == 0 else 'Abnormal'
 
