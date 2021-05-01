@@ -85,80 +85,25 @@
 <div class="container">
     {% block content %}{% endblock %}
 </div>
-  <hr class='mt-5 mb-3'>
 
-  <!-- banner -->
-  <section>
-    <div class="container topping">
-      <div class="row ms-xl-5 ">
-        <div class="col-md-12 ms-xl-4 mt-4">
-          <h1>WE ARE HERE FOR HELP </h1>
-          <button type='button' class='btn btn-dark'>Subscribe</button>
-          <button type='button' class='btn btn-warning'>Mail</button>
-          <a href = "{% url 'login' %}"><button type='button' class='btn btn-danger'>login</button></a>
-        </div>
 
-      </div>
 
-    </div>
-  </section>
-
-  <!-- END banner -->
   <!--footer -->
 
-  <footer class="full_footer">
-    <div class="container topfooter">
-      <div class="row border-new ">
-
-        <div class="col-md-4 mt-3 mb-3">
-
-          <h3>Important links</h3>
-          <a href="{% url 'test' %}">Get a test</a><br>
-          <a href="#">Blog Articles</a><br>
-          <a href="https://www.facebook.com/">Social Media</a><br>
-          <a href="#">Privacy Policy</a>
-
-        </div>
-
-        <div class="col-md-4 mt-3 mb-3">
-
-          <h3>Contact us</h3>
-          <a href="#">School of Enginnering</a><br>
-          <a href="#">Locate us</a><br>
-          <a href="#">Cardiocare and Business</a><br>
-          <a href="#">Contact Cardiocare</a><br>
-          <a href="#">Write for us</a>
-
-        </div>
-
-        <div class="col-md-4 mt-3 mb-3">
-          <h1>For general</h1>
-          <h1>enquiries,</h1>
-          <h1>email <br><a style="font-size: 1.5rem;" href="mailto:cardiocare@gmail.com"><i class="fas fa-envelope"></i>cardiocare@gmail.com</a></h1>
-
-        </div>
+  <footer class="foot">
+    <div class="container topfooter ">
+      <div class="row" style="text-align: center;">
+        <h6 class="col-lg-4 col-md-4 col-sm-4 col-xs-4"><a style="font-size: 1rem;" href="https://github.com/AsadNizami"><i class="fa fa-github"></i> Contact us</a></h6>
+          <h6 class="col-lg-4 col-md-4 col-sm-4 col-xs-4"><a style="font-size: 1rem;" href="mailto:cardiocare@gmail.com"><i class="fas fa-envelope"></i> Write to us</a></h6>
+          <h6 class="col-lg-4 col-md-4 col-sm-4 col-xs-4"><a style="font-size: 1rem;" href="{% url 'about' %}"><i class="fa fa-map-marker"></i> Our location</a></h6>
 
       </div>
     </div>
 
-    <hr>
     <!-- copyright container-->
     <div class="container">
          <div class="row bottom-footer">
-
-          <div class='col-md-1'> <!-- left intentionally --></div>
-
-          <div class="col-md-6 left-tag">
-            <p>Copyright © cardiocare .All rights are reserved.</p>
-          </div>
-
-          <div class="col-md-5 right-tag text-underline-hover">
-            <p><a href="">Privacy Policy |</a></p>
-            <p><a href="">Terms of use |</a></p>
-            <p><a href="">Legal |</a></p>
-            <p><a href="">site map| </a></p>
-          </div>
-
+            <p style="text-align: center;">Copyright © cardiocare | All rights are reserved.</p>
         </div>
      </div>
      <!-- End copyright container-->

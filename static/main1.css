@@ -78,6 +78,20 @@
   height: 200px;
   
 }
+.foot{
+  background-color: rgb(223, 130, 145);
+  padding:20px 0px 0px 0px;
+  margin-top: 150px;
+}
+.cpara{
+  margin-top: -80px;
+}
+
+@media(max-width:992px){
+  .cpara{
+    margin-top: 0px;
+  }
+}
 
 @media only screen and (max-width: 768px)
 {
