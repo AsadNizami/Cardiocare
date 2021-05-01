@@ -39,7 +39,8 @@ urlpatterns += [
 ]
 
 urlpatterns += [
-    path('about/', info_view.about, name='about')
+    path('about/', info_view.about, name='about'),
+    path('info/', info_view.info, name='info')
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
