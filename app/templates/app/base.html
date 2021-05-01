@@ -10,15 +10,17 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-
+  <link rel="icon"
+      type="image/png"
+      href="{% static 'app/base/favicon.png' %}">
   <!--manual CSS-->
   <link rel="stylesheet" type="text/css" href="{% static 'main1.css' %}">
   <script src="https://kit.fontawesome.com/5d3325bdeb.js" crossorigin="anonymous"></script>
 
  
+  {% block head %}{% endblock %}
 
-
-  <title>cardiocare</title>
+  <title>Cardiocare</title>
 </head>
 <!--
     xs<576 | 576<sm<768 | 768<md<992 | 992<lg<1200 | 1200<xl
@@ -48,7 +50,7 @@
               <a class="nav-link active" aria-current="page" href="{% url 'about' %}">About us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Info</a>
+              <a class="nav-link" href="{% url 'info' %}">Info</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="{% url 'test' %}"> Take a test</a>
@@ -77,9 +79,12 @@
     </nav>
     <!--END Navbar-->
   </header>
+  {% block info %}{% endblock %}
+  {% block content_home %}{% endblock %}
 
-  {% block content %}{% endblock content %}
-
+<div class="container">
+    {% block content %}{% endblock %}
+</div>
   <hr class='mt-5 mb-3'>
 
   <!-- banner -->
@@ -90,7 +95,7 @@
           <h1>WE ARE HERE FOR HELP </h1>
           <button type='button' class='btn btn-dark'>Subscribe</button>
           <button type='button' class='btn btn-warning'>Mail</button>
-          <a href = "{% url 'login' %}"><button type='button' class='btn btn-danger'>login</button>
+          <a href = "{% url 'login' %}"><button type='button' class='btn btn-danger'>login</button></a>
         </div>
 
       </div>
@@ -99,11 +104,10 @@
   </section>
 
   <!-- END banner -->
-
   <!--footer -->
 
-  <footer class="full_footer ">
-    <div class="container topfooter ">
+  <footer class="full_footer">
+    <div class="container topfooter">
       <div class="row border-new ">
 
         <div class="col-md-4 mt-3 mb-3">
@@ -121,8 +125,8 @@
           <h3>Contact us</h3>
           <a href="#">School of Enginnering</a><br>
           <a href="#">Locate us</a><br>
-          <a href="#">cardiocare and Business</a><br>
-          <a href="#">Contact cardiocare</a><br>
+          <a href="#">Cardiocare and Business</a><br>
+          <a href="#">Contact Cardiocare</a><br>
           <a href="#">Write for us</a>
 
         </div>
@@ -130,7 +134,7 @@
         <div class="col-md-4 mt-3 mb-3">
           <h1>For general</h1>
           <h1>enquiries,</h1>
-          <h1>email <br><a style="font-size: 1.5rem;" href="mailto:cardiocare@gmail.com"><i class="fas fa-envelope"></i>cardiocare@gmail.com</a></h2>
+          <h1>email <br><a style="font-size: 1.5rem;" href="mailto:cardiocare@gmail.com"><i class="fas fa-envelope"></i>cardiocare@gmail.com</a></h1>
 
         </div>
 
@@ -158,38 +162,15 @@
         </div>
      </div>
      <!-- End copyright container-->
-  </div>
-  
-
-
 
   </footer>
 
    <!--END footer -->
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   <!-- Option 1: Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
     crossorigin="anonymous"></script>
-
-
 </body>
-
 </html>
