@@ -9,6 +9,7 @@ from .models import Test
 from django.contrib.auth.decorators import login_required
 from sklearn.preprocessing import StandardScaler
 from .forms import TestForm
+from .utility import join_mail, test_report
 import datetime
 
 @login_required()
@@ -40,7 +41,9 @@ def result(request):
         return redirect('test')
 
 def get_result(request):
+    test_report(request)
     cls = pk.load(open('app/templates/app/KNN_', 'rb'))
+    Scalar = pk.load(open('app/templates/app/Scalar_', 'rb'))
     column_name = ['age', 'sex', 'cp', 'trestbps', 'chol', 'restecg',
                    'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal']
     lst = list()
@@ -48,12 +51,20 @@ def get_result(request):
         lst.append(request.POST[i])
     # print(lst)
     dic = {column_name[i]: lst[i] for i in range(len(lst))}
+    # test_df = {
+    #     'age': 57, 'sex': 1, 'cp': 1,
+    #     'trestbps': 130, 'chol': 236, 'restecg': 0,
+    #     'thalach': 174, 'exang': 0, 'oldpeak': 0,
+    #     'slope': 1, 'ca': 1, 'thal': 2
+    # }
     df = pd.DataFrame(dic, index=[0])
-    standardScalar = StandardScaler()
-    # print(df)
+
     columns_to_scale = ['age', 'trestbps', 'chol', 'thalach', 'oldpeak']
-    df[columns_to_scale] = standardScalar.fit_transform(df[columns_to_scale])
+    df[columns_to_scale] = Scalar.transform(df[columns_to_scale])
+    print(df)
     ans = cls.predict(df)
+
+    print(ans)
     return ans[0]
 
 @login_required()
@@ -68,7 +79,7 @@ def history(request):
 
 def render_pdf_view(request, pk):
     # date1 = datetime.datetime(date)
-    print(pk)
+    # print(pk)
     hist = get_readable_data(Test.objects.get(pk=pk))
     patient = request.user
 
