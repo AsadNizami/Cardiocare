@@ -79,7 +79,7 @@ def history(request):
 
 def render_pdf_view(request, pk):
     # date1 = datetime.datetime(date)
-    # print(pk)
+    print(pk)
     hist = get_readable_data(Test.objects.get(pk=pk))
     patient = request.user
 

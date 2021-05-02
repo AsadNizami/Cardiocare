@@ -28,6 +28,7 @@ urlpatterns = [
     path('test/', app_view.test, name='test'),
     path('result/', app_view.result, name='result'),
     path('history/', app_view.history, name='history'),
+    # path('', app_view.render_pdf_view, name='pdf'),
     re_path('pdf/(?P<pk>[^/]*)', app_view.render_pdf_view, name='pdf'),
 ]
 
@@ -36,6 +37,7 @@ urlpatterns += [
     path('login/', auth_views.LoginView.as_view(template_name='users/login.html'), name='login'),
     path('logout/', auth_views.LogoutView.as_view(template_name='users/logout.html'), name='logout'),
     path('profile/', user_views.profile, name='profile'),
+    path('delete/', user_views.delete_user, name='delete'),
 ]
 
 urlpatterns += [

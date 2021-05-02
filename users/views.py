@@ -4,6 +4,7 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from .forms import UserRegisterForm, UserUpdateForm, ProfileUpdateForm
 from app import utility as util
+from .models import User
 
 def register(request):
     if request.method == 'POST':
@@ -40,3 +41,11 @@ def profile(request):
     }
 
     return render(request, 'users/profile.html', context)
+
+
+def delete_user(request):
+    print(request.user.pk)
+    User.objects.get(pk=request.user.pk).delete()
+    messages.success(request, f'Your account has been deleted!')
+
+    return redirect('landing')
