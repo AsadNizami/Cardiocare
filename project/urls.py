@@ -44,5 +44,5 @@ urlpatterns += [
     path('info/', info_view.info, name='info'),
     path('learnmore/', info_view.learn_more, name='learn_more')
 ]
-if settings.DEBUG:
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+# if settings.DEBUG:
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

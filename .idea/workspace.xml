@@ -2,33 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="309c9b9f-bb9d-4f2f-a50f-f1a162a1262e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/app/test1.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/app/test1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/templates/info/about/media/default.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/templates/info/about/media/info/about/Angina.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/templates/info/about/media/info/about/ECG.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/templates/info/about/media/info/about/apple.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/templates/info/about/media/info/about/blood-pressure-calculator.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/templates/info/about/media/info/about/cardio.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/templates/info/about/media/info/about/chest pain.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/templates/info/about/media/info/about/cholestrol.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/templates/info/about/media/profile_pics/avatar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/templates/info/about/media/profile_pics/profile.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/templates/info/about/media/profile_pics/profile_ddaoHj8.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/info/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/profile_pics/profile.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/profile_pics/profile_ddaoHj8.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/profile_pics/profile_oDsIggT.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/profile_pics/utf8.PNG" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/info/about/Angina.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/info/about/ECG.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/info/about/blood-pressure-calculator.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/info/about/cardio.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/info/about/chest pain.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/info/about/cholestrol.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
