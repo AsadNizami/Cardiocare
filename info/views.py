@@ -7,3 +7,6 @@ def about(request):
 
 def info(request):
     return render(request, 'info/Info.html')
+
+def learn_more(request):
+    return render(request, 'info/learn_more.html')

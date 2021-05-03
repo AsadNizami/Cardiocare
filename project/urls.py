@@ -28,7 +28,6 @@ urlpatterns = [
     path('test/', app_view.test, name='test'),
     path('result/', app_view.result, name='result'),
     path('history/', app_view.history, name='history'),
-    # path('', app_view.render_pdf_view, name='pdf'),
     re_path('pdf/(?P<pk>[^/]*)', app_view.render_pdf_view, name='pdf'),
 ]
 
@@ -42,7 +41,8 @@ urlpatterns += [
 
 urlpatterns += [
     path('about/', info_view.about, name='about'),
-    path('info/', info_view.info, name='info')
+    path('info/', info_view.info, name='info'),
+    path('learnmore/', info_view.learn_more, name='learn_more')
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
