@@ -7,9 +7,8 @@ from django.template.loader import get_template
 from xhtml2pdf import pisa
 from .models import Test
 from django.contrib.auth.decorators import login_required
-from sklearn.preprocessing import StandardScaler
 from .forms import TestForm
-from .utility import join_mail, test_report
+from .utility import test_report
 import datetime
 
 @login_required()
