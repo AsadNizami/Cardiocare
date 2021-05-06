@@ -4,6 +4,7 @@ from django.contrib import messages
 import pickle as pk
 import pandas as pd
 from django.template.loader import get_template
+from sklearn.preprocessing import StandardScaler
 from xhtml2pdf import pisa
 from .models import Test
 from django.contrib.auth.decorators import login_required
