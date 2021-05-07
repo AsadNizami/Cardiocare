@@ -1,21 +1,36 @@
 {% extends "app/base.html" %}
 {% load crispy_forms_tags %}
+{% load static %}
 {% block content %}
-    <div class="content-section">
-        <form method="POST">
-            {% csrf_token %}
-            <fieldset class="form-group">
-                <legend class="border-bottom mb-4">Join Today</legend>
-                {{ form|crispy }}
-            </fieldset>
-            <div class="form-group" style="padding-top: 20px">
-                <button class="btn btn-outline-info" type="submit">Sign Up</button>
+    <div class="container">
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <img class='img-fluid go-hide' src="{% static 'app/login/Main Image.png' %}">
             </div>
-        </form>
-        <div class="border-top pt-3">
-            <small class="text-muted">
-                Already Have An Account? <a class="ml-2" href="{% url 'login' %}">Sign In</a>
-            </small>
+            
+            <div class="col-lg-6 col-md-8 m-auto" style= 'background-color: #FFEEEE;color: black'>
+                <div class="content-section">
+                    <form method="POST">
+                        {% csrf_token %}
+                        <fieldset class="form-group ms-lg-5 me-lg-5 ">
+                            <legend class="border-bottom mb-3 mt-3">Join Today</legend>
+                            {{ form|crispy }}
+                        </fieldset>
+                        <div class="form-group " style="padding-top: 20px">
+                            <button class="btn btn-danger ms-lg-5 me-lg-5" type="submit">Sign Up</button>
+                        </div>
+                    </form>
+                    <div class="ms-lg-5 me-lg-5 mb-5">
+                        <hr>
+                        <small class="text-muted">
+                            Already Have An Account? <a class="ms-1" style= 'color: red;font-weight: 450;' href="{% url 'login' %}">Sign In</a>
+                        </small>
+                       
+                    
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 {% endblock content %}
