@@ -4,7 +4,6 @@ from django.contrib import messages
 import pickle as pk
 import pandas as pd
 from django.template.loader import get_template
-from sklearn.preprocessing import StandardScaler
 from xhtml2pdf import pisa
 from .models import Test
 from django.contrib.auth.decorators import login_required
@@ -22,6 +21,10 @@ def landing_view(request):
     return render(request, 'app/home.html')
 
 def result(request):
+    if not request.user.is_authenticated:
+        messages.info('Login to take a test')
+        return redirect('login')
+    
     if request.method == 'POST':
         ans = 'High' if get_result(request) == 1 else 'Low'
         form = TestForm(request.POST)

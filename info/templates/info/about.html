@@ -1,5 +1,6 @@
 {% extends "app/base.html" %}
 {% load static %}
+{% load crispy_forms_tags %}
 {% block head %}
 <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
 {% endblock %}
@@ -34,7 +35,7 @@
     </div>
     <div class="container cpara">
         <div class="row">
-            <div class="col-lg-7 col-sm-12 col-xs-12"></div>
+            <div class="col-lg-6 col-sm-12 col-xs-12"></div>
             <div class="hlines col-lg-5 col-sm-12 col-xs-12">
                 <h1> Why was this made?</h1>
             </div><br>
@@ -43,13 +44,13 @@
 
     <div style="padding-top: 0px;">
         <div class="row">
-            <div class="col-lg-7 col-sm-12 col-xs-12"></div>
+            <div class="col-lg-6 col-sm-12 col-xs-12"></div>
             <div class=" col-lg-5 col-sm-12 col-xs-12">
                 <h6>CVDs cause the most number of deaths globally, taking about<br>
                     17.9 million lives each year. According to the official WHO<br>site,
                     more than 75% of these deaths occur in low- and
                     middle-<br>income countries. Most of the people in these countries might<br>be unaware of the risks
-                    they face.Identifying those at highest<br>risk of CVDs and ensuring they receive appropriate
+                    they face. Identifying those at highest<br>risk of CVDs and ensuring they receive appropriate
                     treatment<br>can prevent premature deaths. <br>
                     <br>Our website aims to do the same, i.e. raise awareness about CVDs<br>and help to identify high risk
                     individuals.<br>
@@ -79,7 +80,18 @@
         </div>
     </div>
     <div class="row">
-<div class="col-lg-4"></div>
+<div class="col-lg-4 col-sm-12 form-group" style="padding-bottom: 5px;">
+            <form action="{% url 'about' %}" method="POST">
+            {% csrf_token %}
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4 heading" style="color: red;" ><strong>Invite your friend to take a free test</strong></legend>
+                {{ form|crispy }}
+            </fieldset>
+            <div class="form-group" style="padding-top: 20px">
+                <button class="btn btn-outline-info" type="submit">Send Invitation</button>
+            </div>
+        </form>
+</div>
 <div class="col-lg-8 col-sm-12" style="overflow: auto;">
 
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.7922516804097!2d77.17598261504776!3d28.545963482451977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1dec11bee56d%3A0xc7e24c423d6eb97e!2sDamodar%20Hostel!5e0!3m2!1sen!2sin!4v1619884595903!5m2!1sen!2sin"
