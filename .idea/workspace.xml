@@ -2,31 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="309c9b9f-bb9d-4f2f-a50f-f1a162a1262e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/templates/info/invite.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/utility.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/app/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/app/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/app/default.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/app/email.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/app/email.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/app/history.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/app/history.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/app/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/app/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/app/join_email.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/app/join_email.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/app/result.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/app/result.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/app/test.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/app/user_printer.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/app/user_printer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/utility.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/utility.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/templates/info/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/info/templates/info/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/info/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/info/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/signals.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/signals.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/templates/users/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/users/templates/users/profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +56,7 @@
       <updated>1618337167045</updated>
       <workItem from="1620290885912" duration="665000" />
       <workItem from="1620396213393" duration="544000" />
-      <workItem from="1620579786993" duration="12212000" />
+      <workItem from="1620579786993" duration="12603000" />
     </task>
     <servers />
   </component>

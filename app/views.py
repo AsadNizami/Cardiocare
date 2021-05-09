@@ -22,9 +22,9 @@ def landing_view(request):
 
 def result(request):
     if not request.user.is_authenticated:
-        messages.info('Login to take a test')
+        messages.info(request, 'Login to take a test')
         return redirect('login')
-    
+
     if request.method == 'POST':
         ans = 'High' if get_result(request) == 1 else 'Low'
         form = TestForm(request.POST)
