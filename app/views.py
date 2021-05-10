@@ -45,7 +45,7 @@ def result(request):
 
 def get_result(request):
     test_report(request)
-    cls = pk.load(open('app/templates/app/KNN_', 'rb'))
+    cls = pk.load(open('app/templates/app/DTC_', 'rb'))
     Scalar = pk.load(open('app/templates/app/Scalar_', 'rb'))
     column_name = ['age', 'sex', 'cp', 'trestbps', 'chol', 'restecg',
                    'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal']

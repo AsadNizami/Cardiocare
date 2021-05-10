@@ -11,7 +11,7 @@ from django.contrib.auth import login as auth_login
 def login(request):
     if request.user.is_authenticated:
         print(request.user.is_authenticated)
-        messages.warning(request, f'Logout from the current account first')
+        messages.info(request, f'Logout from the current account first')
         return redirect('landing')
 
     if request.method == 'POST':
@@ -43,7 +43,7 @@ def login(request):
 
 def register(request):
     if request.user.is_authenticated:
-        messages.info(request, f'Logout from this account first')
+        messages.info(request, f'Logout from the current account first')
         return redirect('landing')
 
     elif request.method == 'POST':
