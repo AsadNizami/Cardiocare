@@ -106,6 +106,9 @@
     <div class="container">
          <div class="row bottom-footer">
             <p style="text-align: center;">Copyright © cardiocare | All rights are reserved.</p>
+            {% if ip %}
+           <p style="text-align: center;">{{ip}}</p>
+            {% endif %}
         </div>
      </div>
      <!-- End copyright container-->

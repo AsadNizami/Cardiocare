@@ -11,6 +11,8 @@ from .forms import TestForm
 from .utility import test_report
 import datetime
 
+IP_SET = set()
+
 @login_required()
 def test(request):
     form = TestForm(instance=request.user)
@@ -18,7 +20,12 @@ def test(request):
     return render(request, 'app/test1.html', context)
 
 def landing_view(request):
-    return render(request, 'app/home.html')
+    ip = request.META.get('REMOTE_ADDR')
+    if ip not in IP_SET:
+        IP_SET.add(ip)
+        messages.info(request, 'On the behalf of Cardiocare, wishing you and your family a very Happy Eid Mubarak')
+    print(ip)
+    return render(request, 'app/home.html', {'ip': ip})
 
 def result(request):
     if not request.user.is_authenticated:
