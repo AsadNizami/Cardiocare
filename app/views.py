@@ -19,8 +19,16 @@ def test(request):
     context = {'form': form}
     return render(request, 'app/test1.html', context)
 
+def get_client_ip(request):
+    x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')
+    if x_forwarded_for:
+        ip = x_forwarded_for.split(',')[0]
+    else:
+        ip = request.META.get('REMOTE_ADDR')
+    return ip
+
 def landing_view(request):
-    ip = request.META.get('REMOTE_ADDR')
+    ip = get_client_ip(request)
     if ip not in IP_SET:
         IP_SET.add(ip)
         messages.info(request, 'On the behalf of Cardiocare, wishing you and your family a very Happy Eid Mubarak')
