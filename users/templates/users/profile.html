@@ -1,24 +1,101 @@
 {% extends "app/base.html" %}
 {% load crispy_forms_tags %}
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'history_styles.css' %}">
+
+       <link rel="stylesheet"
+              href=
+"https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+              integrity=
+"sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+              crossorigin="anonymous" />
+        <script src=
+"https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+                integrity=
+"sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+                crossorigin="anonymous"></script>
+{% endblock %}
 {% block content %}
-    <div class="content-section">
-        <div class="media">
-            <img class="rounded-circle account-img" src="{{ user.profile.image.url }}">
-            <div class="media-body">
-                <h2 class="account-heading">{{ user.username }}</h2>
-                <p class="text-secondary">{{ user.email }}</p>
+<section>
+    <div class="container">
+    	<div class="row">
+            <div class="col-md-4"></div>
+    		<div class="col-md-4">
+    		    <div class="card profile-card-1">
+    		        <img src="https://lumiere-a.akamaihd.net/v1/images/sa_pixar_virtualbg_coco_16x9_9ccd7110.jpeg" alt="profile-sample1" class="background"/>
+    		        <img src="{{ user.profile.image.url }}" alt="profile-image" class="profile"/>
+                    <div class="card-content">
+                    <h2>{{ user.first_name }} {{ user.last_name }}
+                        <small>{{ user.email }}</small>
+                    </h2>
+                </div>
+    		</div>
             </div>
+    	</div>
+    </div>
+</section>
+    <div class="content-section" style="text-align: center;">
+    <button type="button"
+            class="btn btn-primary"
+            data-toggle="modal"
+            data-target="#exampleModal">
+              Update Profile
+    </button>
+
+    <button type="button"
+            class="btn btn-danger"
+            data-toggle="modal"
+            data-target="#deleteModal">
+             Delete Profile
+    </button>
+            <div class="modal fade" id="deleteModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">
+                              Are you sure? This will delete your account including all test reports</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">
+                                  ×</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                        <div class="form-group" style="padding-top: 20px">
+                            <a class="btn btn-danger" href="{% url 'delete' %}">Proceed</a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
         </div>
-        <form method="POST" enctype="multipart/form-data">
-            {% csrf_token %}
-            <fieldset class="form-group">
-                <legend class="border-bottom mb-4">Profile Info</legend>
-                {{ u_form|crispy }}
-                {{ p_form|crispy }}
-            </fieldset>
-            <div class="form-group" style="padding-top: 20px">
-                <button class="btn btn-outline-info" type="submit">Update</button>
-            </div>
-        </form>
+    </div>
+
+        <div class="modal fade" id="exampleModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">
+                              Profile Update</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">
+                                  ×</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                        <form method="POST" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <fieldset class="form-group">
+                            {{ u_form|crispy }}
+                            {{ p_form|crispy }}
+                        </fieldset>
+                        <div class="form-group" style="padding-top: 20px">
+                            <button class="btn btn-outline-info" type="submit">Update</button>
+                        </div>
+                        </form>
+                        </div>
+                    </div>
+                </div>
+        </div>
     </div>
 {% endblock content %}

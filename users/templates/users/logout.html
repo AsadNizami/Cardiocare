@@ -1,9 +1,14 @@
 {% extends "app/base.html" %}
 {% block content %}
-<h2>You have been logged out</h2>
-        <div class="border-top pt-3">
+<div class="content-section" style="padding-top: 100px; padding-bottom:230px">
+    <div class="col-lg-10 col-md-12">
+          <h2>You have been logged out</h2>
+            <div class="border-top pt-3">
             <small class="text-muted">
-                <a href="{% url 'login' %}">Log In</a>
+                <a href="{% url 'login' %}">Log In Again</a>
             </small>
-        </div>
+            </div>
+    </div>
+</div>
+
 {% endblock content %}

@@ -1,6 +1,6 @@
 {% extends "app/base.html" %}
 {% block content %}
-
+<div class="container-content"  style="padding-top: 100px; padding-bottom:250px">
 <div class="card text-center">
   <div class="card-header">
     Test Report
@@ -8,6 +8,7 @@
   <div class="card-body">
     <p class="card-text">Risk of heart disease is <strong>{{ans}}</strong>.</p>
   </div>
+  <div class="card-footer"><a href="{% url 'learn_more' %}" style="padding-top: 5%;">Learn More</a></div>
 </div>
-
+</div>
 {% endblock content %}

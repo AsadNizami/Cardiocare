@@ -25,3 +25,5 @@ def join_mail(email):
     html_template = render_to_string('app/join_email.html')
     message.attach_alternative(html_template, 'text/html')
     message.send()
+
+

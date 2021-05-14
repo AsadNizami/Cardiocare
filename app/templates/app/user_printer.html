@@ -1,6 +1,8 @@
+{% load static %}
 <div class="card">
     <h1 class="card-header bg-primary text-white">Test Report</h1>
-    <h2 class="card-header bg-primary text-white">Username: {{patient.username}}</h2>
+    <h2 class="card-header bg-primary text-white">Name: {{patient.first_name}} {{patient.last_name}}</h2>
+
     <h2 class="card-header bg-primary text-white">Email: {{patient.email}}
     <h2 class="card-header bg-primary text-white">Date: {{hist.date}}</h2></h2><br><hr><br>
     <div class="card-body">
@@ -15,7 +17,7 @@
             <dt class="col-6"><b>Maximum Heart Rate Achieved</b>: {{hist.thalach}}</dt>
             <dt class="col-6"><b>Exercise Induced Angina</b>: {{hist.exang}}</dt>
             <dt class="col-6"><b>ST depression induced by <br>exercise relative to rest</b>: {{hist.oldpeak}}</dt>
-            <dt class="col-6"><b>The slope of the peak exercise ST segmen</b>: {{hist.slope}}</dt>
+            <dt class="col-6"><b>The slope of the peak exercise ST segment</b>: {{hist.slope}}</dt>
             <dt class="col-6"><b>Number of major vessels colored by flouroscopy</b>: {{hist.ca}}</dt>
             <dt class="col-6"><b>Thalassemia </b>: {{hist.thal}}</dt>
             <br>
@@ -25,5 +27,13 @@
             </h2>
         </dl>
         <hr>
+    </div>
+    <div>
+        <h2>
+        Cardiocare Diagnostics<br><br>
+        Address: E-Block, Damodar Hostel, Jawaharlal Nehru University, New Delhi-110067 <br>
+        Phone No: 111-222-3333 <br>
+        Email: cardiocare2077@gmail.com <br>
+        </h2>
     </div>
 </div>

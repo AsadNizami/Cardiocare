@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="309c9b9f-bb9d-4f2f-a50f-f1a162a1262e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/app/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/app/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/app/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/app/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/templates/info/Info.html" beforeDir="false" afterPath="$PROJECT_DIR$/info/templates/info/Info.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/style.css" afterDir="false" />
-    </list>
+    <list default="true" id="309c9b9f-bb9d-4f2f-a50f-f1a162a1262e" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,13 +10,33 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="ec7c6a29-e31b-4769-acc1-f4f52a683a16" />
+        <option name="url" value="https://github.com/AsadNizami/Heart-Disease.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/users/models.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/static/main1.css" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/users/templates/users/register.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/users/templates/users/login.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/info/templates/info/about.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/templates/app/home.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/info/forms.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/info/templates/info/learn_more.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/views.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/users/views.py" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1r7ppL8R5G1i47Dp9uDHTv91KOJ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -30,7 +44,6 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -38,7 +51,9 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -49,29 +64,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1618337167045</updated>
+      <workItem from="1620290885912" duration="665000" />
+      <workItem from="1620396213393" duration="544000" />
+      <workItem from="1620579786993" duration="12630000" />
+      <workItem from="1620660638537" duration="568000" />
+      <workItem from="1620661228326" duration="1424000" />
+      <workItem from="1620916222545" duration="1051000" />
     </task>
     <servers />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="1028" y="212" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1618341855284">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="1028" y="212" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1618341855284" />
-    <state x="424" y="7" key="CommitChangelistDialog2" timestamp="1619687802124">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="424" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1619687802124" />
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1619763389881">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1619763389881" />
-    <state x="232" y="125" width="926" height="555" key="dock-window-1" timestamp="1618643226981">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="232" y="125" width="926" height="555" key="dock-window-1/0.0.1536.824@0.0.1536.824" timestamp="1618643226981" />
-    <state x="0" y="0" width="926" height="767" key="dock-window-2" timestamp="1618644040114">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="0" y="0" width="926" height="767" key="dock-window-2/0.0.1536.824@0.0.1536.824" timestamp="1618644040114" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>
