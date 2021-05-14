@@ -2,7 +2,7 @@
 .nav-link
 {
     color: black;
-    font-weight: 680;
+    font-weight: 500;
     margin: 10px;
     border-bottom: 1px solid black;
 } 
@@ -92,7 +92,7 @@
 }
 
 .foot{
-  background-color: rgb(223, 130, 145);
+  background-color: rgb(250, 141, 141);
   padding:20px 0px 0px 0px;
   margin-top: 150px;
 }
