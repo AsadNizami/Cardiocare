@@ -7,10 +7,11 @@ from django.template.loader import get_template
 from xhtml2pdf import pisa
 from .models import Test
 from django.contrib.auth.decorators import login_required
-from sklearn.preprocessing import StandardScaler
 from .forms import TestForm
-from .utility import join_mail, test_report
+from .utility import test_report
 import datetime
+
+IP_SET = set()
 
 @login_required()
 def test(request):
@@ -18,10 +19,27 @@ def test(request):
     context = {'form': form}
     return render(request, 'app/test1.html', context)
 
+def get_client_ip(request):
+    x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')
+    if x_forwarded_for:
+        ip = x_forwarded_for.split(',')[0]
+    else:
+        ip = request.META.get('REMOTE_ADDR')
+    return ip
+
 def landing_view(request):
-    return render(request, 'app/home.html')
+    ip = get_client_ip(request)
+    if ip not in IP_SET:
+        IP_SET.add(ip)
+        messages.info(request, 'On the behalf of Cardiocare, wishing you and your family a very Happy Eid Mubarak')
+    print(ip)
+    return render(request, 'app/home.html', {'ip': ip})
 
 def result(request):
+    if not request.user.is_authenticated:
+        messages.info(request, 'Login to take a test')
+        return redirect('login')
+
     if request.method == 'POST':
         ans = 'High' if get_result(request) == 1 else 'Low'
         form = TestForm(request.POST)
@@ -42,7 +60,7 @@ def result(request):
 
 def get_result(request):
     test_report(request)
-    cls = pk.load(open('app/templates/app/KNN_', 'rb'))
+    cls = pk.load(open('app/templates/app/DTC_', 'rb'))
     Scalar = pk.load(open('app/templates/app/Scalar_', 'rb'))
     column_name = ['age', 'sex', 'cp', 'trestbps', 'chol', 'restecg',
                    'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal']
@@ -79,12 +97,12 @@ def history(request):
 
 def render_pdf_view(request, pk):
     # date1 = datetime.datetime(date)
-    # print(pk)
+    print(pk)
     hist = get_readable_data(Test.objects.get(pk=pk))
     patient = request.user
 
     template_path = 'app/user_printer.html'
-    context = {'myvar': 'this is your template context', 'hist': hist, 'patient':patient}
+    context = {'myvar': 'this is your template context', 'hist': hist, 'patient': patient}
     # Create a Django response object, and specify content_type as pdf
     response = HttpResponse(content_type='application/pdf')
     response['Content-Disposition'] = 'filename="report.pdf"'  # attachment; to download
@@ -106,7 +124,7 @@ def get_readable_data(obj_raw):
     obj_raw.sex = 'Male' if obj_raw.sex == 1 else "Female"
     obj_raw.exang = 'Yes' if obj_raw.exang != 0 else 'No'
     obj_raw.thal = thal_dic[obj_raw.thal]
-    obj_raw.result = 'High' if obj_raw.result == 1 else 'Low'
+    obj_raw.result = 'High' if obj_raw.result == 'High' else 'Low'
     obj_raw.cp = cp_dic[obj_raw.cp]
     obj_raw.restecg = 'Normal' if obj_raw.restecg == 0 else 'Abnormal'
 
