@@ -4,9 +4,15 @@
 Spreading awareness about heart diseases
 
 ## Getting started
-Its recommended to use `python3.8` or above and virtual environment `virtualenv>=20.0.29`.
+
+### Built With
+* Django
+* Bootstrap
+* Jquery
 
 ### Installation
+Its recommended to use `python3.8` or above and virtual environment `virtualenv>=20.0.29`.
+
 Download or clone this repository
 
 ```bash
@@ -36,7 +42,7 @@ Navigate to `http://127.0.0.1:8000` in your browser.
 
 ## Get Involved!
 We're happy to receive bug reports, fixes or any other enhancements.
-Fork this repository and send a pull request.
+Fork this repository and send a pull request. :smile:
 
 ## References
 #pass
