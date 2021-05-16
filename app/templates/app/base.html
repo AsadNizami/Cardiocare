@@ -60,7 +60,7 @@
               <div class="btn-group ">
 
                 {% if user.is_authenticated %}
-                <a class="btn btn-outline-info" href="{% url 'profile' %}">{{ user.username }}</a>
+                <a class="btn btn-info" href="{% url 'profile' %}">{{ user.username }}</a>
                 <a class="btn btn-outline-dark" href="{% url 'history' %}">History</a>
                 <a class="btn btn-outline-danger" href="{% url 'logout' %}">Logout</a>
                 
