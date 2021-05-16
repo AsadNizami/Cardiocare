@@ -4,6 +4,9 @@
 Spreading awareness about heart diseases
 
 ## Getting started
+Its recommended to use `python3.8` or above and virtual environment `virtualenv>=20.0.29`.
+
+### Installation
 Download or clone this repository
 
 ```bash
@@ -29,8 +32,11 @@ python manage.py runserver
 Navigate to `http://127.0.0.1:8000` in your browser.
 
 ## General Info
+#pass
+
+## Get Involved!
+We're happy to receive bug reports, fixes or any other enhancements.
+Fork this repository and send a pull request.
 
 ## References
-* Thoda stackoverflow
-* Thoda youtube
-* Thoda github
+#pass
