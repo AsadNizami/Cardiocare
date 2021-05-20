@@ -11,7 +11,7 @@ class TestForm(forms.ModelForm):
         labels = {
             'cp': _('Chest Pain'),
             'trestbps': _('Resting Blood Pressure in mm Hg (50-200)'),
-            'chol': _('Serum Cholestoral (150-400)'),
+            'chol': _('Serum Cholesterol (150-400)'),
             'restecg': _('Resting Electrocardiographic Result'),
             'thalach': _('Maximum Heart Rate Achieved (50-200)'),
             'exang': _('Exercise Induced Angina'),
