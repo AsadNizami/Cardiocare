@@ -11,7 +11,7 @@ from .forms import TestForm
 from .utility import test_report
 import datetime
 
-IP_SET = set()
+# IP_SET = set()
 
 @login_required()
 def test(request):
@@ -29,9 +29,9 @@ def get_client_ip(request):
 
 def landing_view(request):
     ip = get_client_ip(request)
-    if ip not in IP_SET:
-        IP_SET.add(ip)
-        messages.info(request, 'On the behalf of Cardiocare, wishing you and your family a very Happy Eid Mubarak')
+#     if ip not in IP_SET:
+#         IP_SET.add(ip)
+#         messages.info(request, 'On the behalf of Cardiocare, wishing you and your family a very Happy Eid Mubarak')
     print(ip)
     return render(request, 'app/home.html', {'ip': ip})
 
