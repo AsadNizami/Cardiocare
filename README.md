@@ -38,11 +38,14 @@ python manage.py runserver
 Navigate to `http://127.0.0.1:8000` in your browser.
 
 ## General Info
-#pass
+
 
 ## Get Involved!
 We're happy to receive bug reports, fixes or any other enhancements.
 Fork this repository and send a pull request. :smile:
 
 ## References
-#pass
+* https://docs.djangoproject.com/en/3.2/topics/http/views/
+* https://docs.djangoproject.com/en/3.2/ref/contrib/admin/
+* https://docs.djangoproject.com/en/3.2/topics/db/models/
+* https://www.kaggle.com/tentotheminus9/what-causes-heart-disease-explaining-the-model
